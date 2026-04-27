@@ -12,29 +12,34 @@ This portfolio highlights my background as a software engineer, including my exp
 - Featured projects section
 - Experience and skills overview
 - Contact links
-- Resume and social profile links
 - Fast static deployment
+- Editable profile content in `src/profile.ts`
 
 ## Tech Stack
 
 - React
 - TypeScript
 - Vite
-- CSS / Tailwind CSS
+- CSS
 - GitHub
-- Vercel / Netlify / GitHub Pages
+- Vercel / Netlify / Cloudflare Pages / GitHub Pages
 
-## Getting Started
-
-Install dependencies:
+## Run Locally
 
 ```bash
 npm install
-
-Start the server 
 npm run dev
+```
 
-Build for production 
+## Build
+
+```bash
 npm run build
+```
 
+## Free Hosting Options
 
+- Vercel: import the GitHub repository and use the default Vite settings.
+- Netlify: build command `npm run build`, publish directory `dist`.
+- Cloudflare Pages: build command `npm run build`, output directory `dist`.
+- GitHub Pages: build locally or use a GitHub Actions workflow to publish `dist`.
