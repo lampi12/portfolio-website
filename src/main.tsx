@@ -5,6 +5,7 @@ import "./styles.css";
 
 const navItems = [
   { label: "Experience", href: "#experience" },
+  { label: "Education", href: "#education" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
@@ -102,7 +103,7 @@ function App() {
       <section className="section" id="experience">
         <div className="section-heading">
           <p className="eyebrow">Experience</p>
-          <h2>Practical engineering impact</h2>
+          <h2>Engineering experience across production and project environments</h2>
         </div>
         <div className="timeline">
           {profile.experience.map((item) => (
@@ -122,10 +123,29 @@ function App() {
         </div>
       </section>
 
+      <section className="section education-section" id="education">
+        <div className="section-heading">
+          <p className="eyebrow">Education</p>
+          <h2>Computer science background</h2>
+        </div>
+        <article className="education-card">
+          <div>
+            <span>{profile.education.period}</span>
+            <h3>{profile.education.degree}</h3>
+            <p>{profile.education.school} / {profile.education.location}</p>
+          </div>
+          <ul>
+            {profile.education.details.map((detail) => (
+              <li key={detail}>{detail}</li>
+            ))}
+          </ul>
+        </article>
+      </section>
+
       <section className="section split" id="skills">
         <div className="section-heading">
           <p className="eyebrow">Skills</p>
-          <h2>Tools I use to ship reliable software</h2>
+          <h2>Tools I use to build, debug, and ship software</h2>
         </div>
         <div className="skill-grid">
           {profile.skills.map((group) => (
@@ -161,7 +181,7 @@ function App() {
                 <span>{project.stack.join(" / ")}</span>
               </div>
               <p>{project.description}</p>
-              <a href={project.href}>View project</a>
+              {project.href ? <a href={project.href}>View project</a> : <span className="project-note">Case study available on request</span>}
             </article>
           ))}
         </div>
