@@ -126,7 +126,7 @@ function App() {
       <section className="section education-section" id="education">
         <div className="section-heading">
           <p className="eyebrow">Education</p>
-          <h2>Computer science foundation with applied systems work</h2>
+          <h2>Computer science background</h2>
         </div>
         <article className="education-card">
           <div>

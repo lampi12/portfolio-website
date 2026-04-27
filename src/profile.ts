@@ -21,7 +21,7 @@ export const profile = {
     degree: "Bachelor of Science in Computer Science",
     location: "Tampa, Florida",
     period: "May 2025",
-    details: ["GPA: 3.47 / 4.00"],
+    details: ["Computer science coursework focused on software engineering, systems, databases, and applied development."],
   },
   experience: [
     {
