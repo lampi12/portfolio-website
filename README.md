@@ -1,6 +1,28 @@
-# Portfolio
+# Developer Portfolio
 
-A modern developer portfolio built with React, Vite, and TypeScript.
+A modern, responsive portfolio website built to showcase my software engineering experience, technical skills, and featured projects.
+
+## Overview
+
+This portfolio highlights my background as a software engineer, including my experience, project work, technical stack, and ways to connect with me professionally.
+
+## Features
+
+- Responsive modern design
+- Featured projects section
+- Experience and skills overview
+- Contact links
+- Fast static deployment
+- Editable profile content in `src/profile.ts`
+
+## Tech Stack
+
+- React
+- TypeScript
+- Vite
+- CSS
+- GitHub
+- Vercel / Netlify / Cloudflare Pages / GitHub Pages
 
 ## Run Locally
 
@@ -21,7 +43,3 @@ npm run build
 - Netlify: build command `npm run build`, publish directory `dist`.
 - Cloudflare Pages: build command `npm run build`, output directory `dist`.
 - GitHub Pages: build locally or use a GitHub Actions workflow to publish `dist`.
-
-## Customize
-
-Edit `src/profile.ts` to update your name, experience, skills, projects, and links.
